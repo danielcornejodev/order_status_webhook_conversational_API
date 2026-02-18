@@ -65,7 +65,7 @@ async def chat(request: ChatRequest):
         
         if not is_order_status_intent(message):
             return ChatResponse(
-                response= "I'm sorry, I can help with Order Status Inquiries",   
+                response= "I'm sorry, I can only help with Order Status Inquiries",   
                 status= "unsupported_intent"
             )
             
